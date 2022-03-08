@@ -1,0 +1,19 @@
+.header {
+    position: absolute;
+    width: 1440px;
+    height: 678px;
+    left: 0px;
+    top: -25px;
+
+    background: #F9F0F0;
+}
+
+footer {
+    position: absolute;
+    width: 1453px;
+    height: 144px;
+    left: 0px;
+    top: 880px;
+
+    background: #130D0D;
+}
