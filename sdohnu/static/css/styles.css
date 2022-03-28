@@ -1,19 +1,158 @@
-.header {
-    position: absolute;
-    width: 1440px;
-    height: 678px;
-    left: 0px;
-    top: -25px;
+body {
+    margin: 0;
+	font-family: 'Poppins', sans-serif;
 
-    background: #F9F0F0;
+	font-size: 15px;
+	color: #333;
+	line-height: 1.6;
 }
 
-footer {
-    position: absolute;
-    width: 1453px;
-    height: 144px;
-    left: 0px;
-    top: 880px;
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
 
-    background: #130D0D;
+*,
+*: after,
+*: before,
+{
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 60px; /*отступ слева*/
+}
+
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 75vh;
+	padding-top: 25px;
+	padding-bottom: 55px;
+
+	background: #070707;
+}
+
+.intro_title {
+	margin-top: 30px;
+	font-size: 65px;
+	font-weight: 700;
+	text-align: left;
+	line-height: 1.25; /*отступ между строк*/
+
+	font-family: 'Roboto';
+
+}
+
+.intro_title:after {
+	margin-top: 7px;
+	content: "";
+	display: block;
+	width: 70%;
+	height: 15px;
+	/*margin: 20px auto 0;*/
+	/*margin-bottom: 0px;*/
+
+	background-color: #2F7AA5;
+}
+
+.guesswhopainted {
+	/*margin-top: 15px;*/
+
+	font-family: 'Roboto';
+	color: #CDCDCD;
+
+}
+
+.help {
+	letter-spacing: -0.12em;
+	font-size: 55px;
+	font-weight: 15;
+
+}
+
+
+.header {
+	padding-top: 30px; /*отстутп сверху*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000; /*поверх всего чтобы было*/
+}
+
+.header_inner {
+	display: flex;
+	justify-content: right;
+	align-items: center; /*выравнивание по центру относительно горизонтали*/
+}
+
+.nav {
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+/**/
+.nav_link {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+
+.information{     /*текст на главной странице сайта*/ 
+	margin: 20px;
+	font-family: 'Poppins', sans-serif;
+
+	font-size: 15px;
+	color: #333;
+	line-height: 1.6;	
+}
+
+
+footer {
+	background: #130D0D;
+	height: auto;
+	width: 100vw;
+	font-family: 'Robo', sans-serif;
+	padding-top: 30px;
+	color:  #DA8A12;
+	letter-spacing: -0.3em;
+
+}
+
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+	font-size: 17px;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 2.5rem;
+
+}
+
+.footer-bottom {
+    background-color: #130D0D;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+
+    color: #fff;
+    font-size: 14px;
+    word-spacing: 2px;
+    letter-spacing: 0;
+    /*text-transform: capitalize;*/
+    
 }
