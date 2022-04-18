@@ -291,3 +291,16 @@ footer {
 	display: block;	
 	/*background-color: #f5ab;*/
 }
+
+
+.intro_new {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 10vh;
+	padding-top: 55px;
+	padding-bottom: 55px;
+
+	background: #070707;
+}

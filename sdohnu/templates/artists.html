@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Художники</title>
+
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<div class="burger-menu">
+    <a href="#" class="burger-menu_button">
+        <span class="burger-menu_lines"></span>
+    </a>
+
+    <nav class="burger-menu_nav">
+        <a href="{% url 'tests' %}" class="burger-menu_link">Угадайки</a>
+        <a href="{% url 'artists' %}" class="burger-menu_link">Художники</a>
+        <a href="{% url 'styles_info' %}" class="burger-menu_link">Стили</a>
+        <a href="#" class="burger-menu_link">Личный кабинет</a>
+        <a href="#site_info" class="burger-menu_link">О сайте</a>
+    </nav>
+
+    <div class="burger-menu_overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'css/script.js'%}"></script>
+
+</div>
+
+<div class="intro_new">
+    <h1>dfksjdfkjs</h1>
+</div>
+
+
+<body>
+<h1>Тут будет страница с художниками расположенными по алфавиту. Ждите обновления!</h1>
+</body>
+</html>
