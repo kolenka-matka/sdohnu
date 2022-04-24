@@ -62,19 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 	transition: all 0.5s ease 0s;
 
 }
-/*
-.intro_title:after {
-	margin-top: 7px;
-	content: "";
-	display: block;
-	width: 70%;
-	height: 15px;
-	margin-bottom: 20px;
-
-	background-color: #2F7AA5;
-	transition: all 0.5s ease 0s;
-}
-*/
 
 
 .godhelp:hover {

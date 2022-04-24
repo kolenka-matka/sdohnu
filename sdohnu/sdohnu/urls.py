@@ -23,4 +23,5 @@ urlpatterns = [
     path('tests/', views.tests, name='tests'),
     path('artists/', views.artists, name='artists'),
     path('styles_info/', views.styles_info, name='styles_info'),
+    path(r'^login/$', views.user_login, name='login'),
 ]
