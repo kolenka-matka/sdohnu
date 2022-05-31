@@ -1,9 +1,9 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Художники</title>
+    <title>Играем!</title>
 
     <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css">
 
@@ -16,11 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-
 </head>
+
 
 
 <div class="burger-menu">
@@ -49,26 +46,25 @@
 
 
 <body>
-    <br>
-<h1 style="margin-left: 20px;">Тут будет страница с художниками расположенными по алфавиту.</h1>
-<h1 style="margin-left: 20px;"><a class="prosto_link" href="{% url 'artist_create' %}">Добавляйте новых художников,</a> обновляйте страницу и смотрите полный список отечественных деятелей искусства!</h1>
+<h1>Так, тут будет начинаться уже игра. Дай Бог придумать, как ее написать</h1>
+<h1>Ну) Бог дал, Бог - взял, как говорится)</h1>
+{{ selected.style }}
 
-{% for artist in artists %}
-    <div class="result_box">
-    <!--        <td><h3>{{ artist.id_artist }}</h3></td>-->
-            <td><img align="middle" width="300" src=" {{ artist.image }}" alt=""></td>
-            <div class="result_info">
-                <td><h3 class="artist_name">{{ artist.name }}</h3></td>
-                <td><h3>{{ artist.biography }}</h3></td>
-                <td><h3>{{ artist.date_birth }} - {{ artist.date_death }}</h3></td>
-                <!-- <td><br></td> -->
-                <td></td>
-            </div>
-        </div>
-        <!-- <br> -->
+{% for painting in paintings %}
+<!--            <td><p>{{ painting.id_painting }}</p></td>-->
+            <img style="margin-left:500px"  width="300" src=" {{ painting.image }}" alt="">
+<!--            <p style="margin-left:500px">{{ painting.name }}</p>-->
+<!--            <p style="margin-left:500px">{{ painting.artist }}</p>-->
+<!--            <p style="margin-left:500px">{{ painting.style }}</p>-->
+<!--            <p style="margin-left:500px">{{ painting.date}}</p>-->
+            {% for answer in answers %}
+                <p>{{ answer }}</p>
+            {% endfor %}
 
+            <td><br></td>
+            <td></td>
+        </tr>
 {% endfor %}
-
 
 </body>
 <footer>

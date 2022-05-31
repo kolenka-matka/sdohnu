@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	height: 75vh;
+	height: 90vh;
 	padding-top: 55px;
 	padding-bottom: 55px;
 
@@ -49,10 +49,31 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.header_logo { /*название если че*/
+	font-size: 30px;
+	font-weight: 700;
+	margin-left: 20px;
+	color:  #fff;
+	font-size: 45px;
+}
+
+.logo_link {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}
+
+.logo_link:hover {
+	color: #7B2A11;
+}
+
+
+
+
 .godhelp {
 	display: inline-flex;
 	flex-direction: column;
-	
+
 	content: "";
 	width: 70%;
 	height: 15px;
@@ -122,13 +143,14 @@ h1, h2, h3, h4, h5, h6 {
 	transition: color 0.2s linear;
 }
 
-.information{     /*текст на главной странице сайта*/ 
+.information{     /*текст на главной странице сайта*/
 	margin: 20px;
 	font-family: 'Poppins', sans-serif;
 
 	font-size: 15px;
 	color: #333;
-	line-height: 1.6;	
+	line-height: 1.6;
+	text-align: center;
 }
 
 
@@ -169,7 +191,7 @@ footer {
     word-spacing: 2px;
     letter-spacing: 0;
     /*text-transform: capitalize;*/
-    
+
 }
 
 
@@ -225,7 +247,7 @@ footer {
     transform: rotate(45deg);
 }
 .burger-menu_active .burger-menu_lines::after {
-    top: 0; 
+    top: 0;
     transform: rotate(-45deg);
 }
 
@@ -275,7 +297,7 @@ footer {
 }
 
 .burger-menu_active .burger-menu_overlay {
-	display: block;	
+	display: block;
 	/*background-color: #f5ab;*/
 }
 
@@ -290,4 +312,123 @@ footer {
 	padding-bottom: 55px;
 
 	background: #070707;
+}
+
+.result_box{
+	/*width: 95%;
+	background-color: #efefef;
+	display: inline-block;*/
+	/*vertical-align: top;*/
+	/*padding: 8px 15px;*/
+
+
+	font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    /*width: 99%;*/
+    margin: 20px;
+
+    /*border: 10px solid #d7d;*/
+    /*background-color: #efefef;*/
+    background-color: #5F9EA0;
+
+    padding: 24px 20px;
+}
+
+.result_info{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: #000;
+	display: block;
+	margin-left: 20px;
+	background-color: #fff;
+	height: 60%;
+	padding: 10px;
+	/*border: 3px solid #333;*/
+}
+
+.artist_name{
+	font-family: 'Comfortaa', cursive;
+	font-size: 40px;
+	/*font-family: 'Montserrat', sans-serif;*/
+	letter-spacing: -0.12em;
+	color:  #8B0000;
+	/*color:  #8FBC8F;*/
+}
+
+.prosto_link {
+	color: #8FBC8F;
+	text-decoration: none;
+	transition: color 0.1s linear;
+}
+
+.prosto_link:hover {
+	color: #DA8A12;
+}
+
+.textcols {
+	margin: 20px;
+	white-space: nowrap;
+	font-size: 0;
+	/*text-align: center;*/
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	/*background: #fff2e1;*/
+	margin-right: 5%;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+
+}
+.textcols .textcols-item:last-child {
+	margin-right: 0 ;
+}
+
+.test_link {
+	color: #2F7AA5;
+	text-decoration: none;
+	transition: color 0.1s linear;
+}
+
+.test_link:hover {
+	color: #DA8A12;
+}
+
+
+.image_1 {
+	position: absolute;
+	width: 465px;
+	height: 263px;
+	left: 576px;
+	top: 71px;
+
+	background: url(image.png);
+	opacity: 0.8;
+}
+
+.image_2 {
+	position: absolute;
+	width: 286px;
+	height: 329px;
+	left: 940px;
+	top: 208px;
+
+	background: url(image.png);
+}
+
+
+.image_3 {
+	position: absolute;
+	width: 261.94px;
+	height: 222.45px;
+	left: 706.08px;
+	top: 274.49px;
+
+	background: url(image.png);
+	transform: rotate(41.91deg);
 }

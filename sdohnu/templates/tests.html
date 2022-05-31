@@ -17,7 +17,140 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     
 </head>
+
+
+
+<div class="burger-menu">
+    <a href="#" class="burger-menu_button">
+        <span class="burger-menu_lines"></span>
+    </a>
+
+    <nav class="burger-menu_nav">
+        <a href="{% url 'tests' %}" class="burger-menu_link">Угадайки</a>
+        <a href="{% url 'artists' %}" class="burger-menu_link">Художники</a>
+        <a href="{% url 'styles_info' %}" class="burger-menu_link">Стили</a>
+        <a href="#" class="burger-menu_link">Личный кабинет</a>
+        <a href="#site_info" class="burger-menu_link">О сайте</a>
+    </nav>
+
+    <div class="burger-menu_overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'css/script.js'%}"></script>
+
+</div>
+
+<div class="intro_new">
+    <div class="header_logo"><a class="logo_link" href="{% url "index" %}">GWP</a></div>
+</div>
+
+
 <body>
-<h1>Тут будут угадайки. Ждите обновления</h1>
+
+<h1 style="margin-left:20px">Тут будут угадайки. Ждите обновления</h1>
+
+<div class="textcols">
+    <div class="textcols-item">
+        <br>
+        <img width="210" src="https://rusmuseumvrm.ru/data/collections/painting/17_19/kiprenskiy_o._a._molodoy_sadovnik._1817._zh-5137/18556_mainfoto_03.jpg" alt="">
+        <h3 style="margin-left:20px"><a class="test_link" href="классицизм">классицизм</a></h3>
+    </div>
+    <div class="textcols-item">
+        <img width="290" src="https://media.izi.travel/e07e4a31-ccfe-4a85-a39c-3bc609800ab9/a7c61f20-8bad-4fe4-bf60-c613a92f4ad1_800x600.jpg" alt="">
+        <h3 style="margin-left:20px"><a class="test_link" href="романтизм">романтизм</a></h3>
+    </div>
+    <div class="textcols-item">
+        <br>
+        <img width="240" src="https://veryimportantlot.com/uploads/over/files/%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/2020/%D0%9C%D0%B0%D0%B9%202020/%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D0%B1%D0%BB%D0%BE%D0%B3%D0%B0.%20%D0%96%D0%B8%D0%B2%D0%BE%D0%BF%D0%B8%D1%81%D1%8C%2059%20(3)%20%D0%9F%D0%B0%D1%80%D1%81%D1%83%D0%BD%D0%B0.%20%D0%A6%D0%B0%D1%80%D1%8C%20%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%20%D0%A4%D0%B5%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87.jpg" alt="">
+        <h3 style="margin-left:20px"><a class="test_link"  href="парсуна">парсуна</a></h3>
+    </div>
+</div>
+
+<!-- <br> -->
+<div class="textcols">
+    <div class="textcols-item">
+        <img width="300" src="https://portrets.ru/hudozhniki/russkij-romantizm-v-zhivopisi.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="академизм">академизм</a></h3>
+    </div>
+    <div class="textcols-item">
+        <br>
+        <br>
+        <img width="370" src="https://static.kulturologia.ru/files/u19001/Boyarinya-morozova-1.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="реализм">реализм</a></h3>
+    </div>
+    <div class="textcols-item">
+        <img width="350" src="https://www.culture.ru/storage/images/60156b0641884c2ef3860608a5590185/1c95229bb281251bdc28e4697afa8039.jpg/g_center,c_fill/1-valentin-serov.-devochka-s-persikami.-1887.-gosudarstvennaya-tretyakovskaya-galereya-moskva.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="импрессионизм">импрессионизм</a></h3>
+    </div>
+</div>
+<!-- <br> -->
+
+<div class="textcols">
+    <div class="textcols-item">
+        <img width="350" src="https://arthive.net/res/media/img/oy1200/work/52e/306466@2x.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="модерн">модерн</a></h3>
+    </div>
+    <div class="textcols-item">
+        <br>
+        <br>
+        <img width="360" src="https://arthive.net/res/media/img/oy800/work/f21/429810@2x.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="символизм">символизм</a></h3>
+    </div>
+    <div class="textcols-item">
+        <img width="360" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Serebryakova_SefPortrait.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="экспрессионизм">экспрессионизм</a></h3>
+    </div>
+</div>
+
+<!-- <br> -->
+
+<div class="textcols">
+    <div class="textcols-item">
+        <br>
+        <br>
+        <img width="370" src="https://www.wassilykandinsky.ru/images/works/250.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="авангардизм">авангардизм</a></h3>
+        
+    </div>
+    <div class="textcols-item">
+        <img width="310" src="https://opisanie-kartin.com/pictures/14/image007.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="кубизм">кубизм</a></h3>
+    </div>
+    <div class="textcols-item">
+                <br>
+        <br>
+        <img width="310" src="https://arthive.net/res/media/img/oy800/work/7ec/451816@2x.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="постимпрессионизм">постимпрессионизм</a></h3>
+    </div>
+</div>
+
+<!-- <br> -->
+
+<div class="textcols">
+    <div class="textcols-item">
+        <img width="310" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82._1915._%D0%93%D0%A2%D0%93.png/350px-%D0%A7%D1%91%D1%80%D0%BD%D1%8B%D0%B9_%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82._1915._%D0%93%D0%A2%D0%93.png" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="супрематизм">супрематизм</a></h3>
+    </div>
+    <div class="textcols-item">
+        <img width="450" src="https://muzei-mira.com/templates/museum/images/paint/estafeta-deineka+.jpg" alt="">
+        <h3 style="margin-left:20px"><a  class="test_link" href="соцреализм">соцреализм</a></h3>
+    </div>
+</div>
+
 </body>
+
+<footer>
+    <div class="footer-content">
+        <h1>Guess Who Painted 2022</h1>
+    </div>
+
+
+    <div class="footer-bottom">
+        <h3>Полугодовой проект Златкина Катя</h3>
+    </div>
+</footer>
+
+
+</body>
+</html>
 </html>

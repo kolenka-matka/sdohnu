@@ -16,10 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-
 </head>
 
 
@@ -49,26 +45,17 @@
 
 
 <body>
-    <br>
-<h1 style="margin-left: 20px;">Тут будет страница с художниками расположенными по алфавиту.</h1>
-<h1 style="margin-left: 20px;"><a class="prosto_link" href="{% url 'artist_create' %}">Добавляйте новых художников,</a> обновляйте страницу и смотрите полный список отечественных деятелей искусства!</h1>
-
-{% for artist in artists %}
-    <div class="result_box">
-    <!--        <td><h3>{{ artist.id_artist }}</h3></td>-->
-            <td><img align="middle" width="300" src=" {{ artist.image }}" alt=""></td>
-            <div class="result_info">
-                <td><h3 class="artist_name">{{ artist.name }}</h3></td>
-                <td><h3>{{ artist.biography }}</h3></td>
-                <td><h3>{{ artist.date_birth }} - {{ artist.date_death }}</h3></td>
-                <!-- <td><br></td> -->
-                <td></td>
-            </div>
-        </div>
-        <!-- <br> -->
-
-{% endfor %}
-
+<h1>Тут можно добавлять художников. Добавляйте, не стесняйтесь!</h1>
+<form method="post">
+  {% csrf_token %}
+    {{ form.name }}<br>
+    {{ form.biography }}<br>
+    {{ form.date_birth }}<br>
+    {{ form.date_death }}<br>
+    {{ form.image }}<br>
+    <span>{{ error }}</span>
+  <button class="" type="submit">Добавить художника</button>
+</form>
 
 </body>
 <footer>

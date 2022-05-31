@@ -1,9 +1,9 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Стили</title>
+    <title>Играем!</title>
 
     <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css">
 
@@ -41,39 +41,29 @@
 </div>
 
 <div class="intro_new">
-    <div class="header_logo"><a class="logo_link" href="{% url "index" %}">GWP</a></div>
+    <h1><a class="logo_link" href="{% url "index" %}">GWP</a></h1>
 </div>
 
 
 <body>
-<h1>Стили и их краткое описание.</h1>
-
+<h1>Так, тут будет начинаться уже игра. Дай Бог придумать как ее написать</h1>
+<h1>КАТЯ ВПЕРЕД</h1>
 <table>
-{% for style in styles %}
-    <tr>
-        <td><p>{{ style.id_style }}</p></td>
-        <td><p>{{ style.name }}</p></td>
-        <td><p>{{ style.description }}</p></td>
-        <td><p>{{ style.date_start }} - {{ style.date_finish }}</p></td>
-        <td><img align="middle" width="200" src=" {{ style.image }}" alt=""></td>
-    </tr>
+{{ selected.style }}
+
+{% for painting in paintings %}
+        <tr>
+            <td><p>{{ painting.id_painting }}</p></td>
+            <td><p>{{ painting.name }}</p></td>
+            <td><p>{{ painting.artist }}</p></td>
+            <td><p>{{ painting.style }}</p></td>
+            <td><p>{{ painting.date}}</p></td>
+            <td><img align="middle" width="400" src=" {{ painting.image }}" alt=""></td>
+            <td><br></td>
+            <td></td>
+        </tr>
 {% endfor %}
 </table>
 
-
 </body>
-<footer>
-    <div class="footer-content">
-        <h1>Guess Who Painted 2022</h1>
-    </div>
-
-
-    <div class="footer-bottom">
-        <h3>Полугодовой проект Златкина Катя</h3>
-    </div>
-</footer>
-
-
-</body>
-</html>
 </html>
